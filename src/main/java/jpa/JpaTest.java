@@ -23,7 +23,7 @@ public class JpaTest {
 	}
 
 	public static void main(String[] args) {
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("mysql");
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("dev");
 		EntityManager manager41 = factory.createEntityManager();
 
 		JpaTest test = new JpaTest(manager41);
@@ -47,11 +47,11 @@ public class JpaTest {
 			 r.setProprio(p);
 			
 			 Chauffage c1= new Chauffage();
-//			 c1.setResidence(r);
-			 c1.setMarque("fagor");
+			 c1.setResidence(r);
+//			 c1.setMarque("fagor");
 			 Chauffage c2 = new Chauffage();
-//			 c2.setResidence(r);
-			 c2.setMarque("fagor");
+			 c2.setResidence(r);
+//			 c2.setMarque("fagor");
 			
 			 ElectronicDevices ed = new ElectronicDevices();
 			 ed.setProprio(p);

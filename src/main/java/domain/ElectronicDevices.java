@@ -4,13 +4,15 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.ManyToOne;
 
 @Entity
-@DiscriminatorValue("ElectronicDevices")
+@DiscriminatorValue("ElectronicDevice")
 public class ElectronicDevices extends InteligentDevice {
 	
-//	long id;
+	//long id;
 	int consommation;
 	Person proprio;
 	
@@ -25,7 +27,7 @@ public class ElectronicDevices extends InteligentDevice {
 		// TODO Auto-generated constructor stub
 	}
 	
-	
+//	
 //	@Id
 //	@GeneratedValue
 //	public long getId() {
@@ -34,7 +36,7 @@ public class ElectronicDevices extends InteligentDevice {
 //	public void setId(long id) {
 //		this.id = id;
 //	}
-//	
+	
 	public int getConsommation() {
 		return consommation;
 	}

@@ -15,10 +15,24 @@ import javax.persistence.InheritanceType;
 @DiscriminatorValue("InteligentDevice")
 public class InteligentDevice {
 
-	@Id
-	@GeneratedValue
+	
 	long id;
 	String marque;
+	
+	@Id
+	@GeneratedValue
+	public long getId() {
+		return id;
+	}
+
+
+
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	
   
 	
 	
