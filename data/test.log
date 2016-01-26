@@ -112,3 +112,8 @@ DISCONNECT
 /*C15*/SET SCHEMA PUBLIC
 alter table Person_Person drop constraint UK_ejm7ti25m10o49jp179dtyhfn
 alter table Person_Person add constraint UK_ejm7ti25m10o49jp179dtyhfn  unique (ami_id)
+/*C14*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C16*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C15*/DISCONNECT

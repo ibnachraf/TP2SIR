@@ -23,7 +23,7 @@ public class JpaTest {
 	}
 
 	public static void main(String[] args) {
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("dev");
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("mysql");
 		EntityManager manager41 = factory.createEntityManager();
 
 		JpaTest test = new JpaTest(manager41);
@@ -33,67 +33,67 @@ public class JpaTest {
 //		test.afficheProprioResidence();
 		try {
 
-			
-			 Person p = new Person();
-			 p.setNom("martin2");
-			 p.setMail("jj@f.l");
-			 p.setPrenom("per");
-			
-			
-			
-			 Residence r = new Residence();
-			 r.setNbPieces(4);
-			 r.setTaille(3);
-			 r.setProprio(p);
-			
-			 Chauffage c1= new Chauffage();
-			 c1.setResidence(r);
-//			 c1.setMarque("fagor");
-			 Chauffage c2 = new Chauffage();
-			 c2.setResidence(r);
-//			 c2.setMarque("fagor");
-			
-			 ElectronicDevices ed = new ElectronicDevices();
-			 ed.setProprio(p);
-			 ed.setConsommation(2);
-			 ElectronicDevices ed2 = new ElectronicDevices();
-			 ed2.setProprio(p);
-			 ed2.setConsommation(3);
-			
-			 manager41.persist(r);
-			 manager41.persist(c1);
-			 manager41.persist(c2);
-			 manager41.persist(ed);
-			 manager41.persist(ed2);
+//			
+//			 Person p = new Person();
+//			 p.setNom("martin2");
+//			 p.setMail("jj@f.l");
+//			 p.setPrenom("per");
+//			
+//			
+//			
+//			 Residence r = new Residence();
+//			 r.setNbPieces(4);
+//			 r.setTaille(3);
+//			 r.setProprio(p);
+//			
+//			 Chauffage c1= new Chauffage();
+//			 c1.setResidence(r);
+////			 c1.setMarque("fagor");
+//			 Chauffage c2 = new Chauffage();
+//			 c2.setResidence(r);
+////			 c2.setMarque("fagor");
+//			
+//			 ElectronicDevices ed = new ElectronicDevices();
+//			 ed.setProprio(p);
+//			 ed.setConsommation(2);
+//			 ElectronicDevices ed2 = new ElectronicDevices();
+//			 ed2.setProprio(p);
+//			 ed2.setConsommation(3);
+//			
+//			 manager41.persist(r);
+//			 manager41.persist(c1);
+//			 manager41.persist(c2);
+//			 manager41.persist(ed);
+//			 manager41.persist(ed2);
 			
 
-//			Person p = new Person();
-//			p.setNom("Ibn Mrabet");
-//			p.setMail("ibnachraf@gm.com");
-//			p.setPrenom("Achraf");
-//
-//			Residence r = new Residence();
-//			r.setNbPieces(10);
-//			r.setTaille(200);
-//			r.setProprio(p);
-//
-//			Chauffage c1 = new Chauffage();
-//			c1.setResidence(r);
-//			Chauffage c2 = new Chauffage();
-//			c2.setResidence(r);
-//
-//			ElectronicDevices ed = new ElectronicDevices();
-//			ed.setProprio(p);
-//			ed.setConsommation(2);
-//			ElectronicDevices ed2 = new ElectronicDevices();
-//			ed2.setProprio(p);
-//			ed2.setConsommation(3);
-//
-//			manager41.persist(r);
-//			manager41.persist(c1);
-//			manager41.persist(c2);
-//			manager41.persist(ed);
-//			manager41.persist(ed2);
+			Person p = new Person();
+			p.setNom("Ibn Mrabet");
+			p.setMail("ibnachraf@gm.com");
+			p.setPrenom("Achraf");
+
+			Residence r = new Residence();
+			r.setNbPieces(10);
+			r.setTaille(200);
+			r.setProprio(p);
+
+			Chauffage c1 = new Chauffage();
+			c1.setResidence(r);
+			Chauffage c2 = new Chauffage();
+			c2.setResidence(r);
+
+			ElectronicDevices ed = new ElectronicDevices();
+			ed.setProprio(p);
+			ed.setConsommation(2);
+			ElectronicDevices ed2 = new ElectronicDevices();
+			ed2.setProprio(p);
+			ed2.setConsommation(3);
+
+			manager41.persist(r);
+			manager41.persist(c1);
+			manager41.persist(c2);
+			manager41.persist(ed);
+			manager41.persist(ed2);
 
 		} catch (Exception e) {
 			e.printStackTrace();

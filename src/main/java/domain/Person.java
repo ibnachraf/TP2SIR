@@ -14,9 +14,9 @@ public class Person {
 	String nom;
 	String prenom;
 	String mail;
-	List<Residence> residences;
-	List<Person> ami;
-	List<ElectronicDevices> devices;
+//	List<Residence> residences;
+//	List<Person> ami;
+//	List<ElectronicDevices> devices;
 	
 	public Person() {
 		super();
@@ -35,7 +35,7 @@ public class Person {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.mail = mail;
-		this.residences = residences;
+//		this.residences = residences;
 	}
 
 	@Id
@@ -72,38 +72,38 @@ public class Person {
 		this.mail = mail;
 	}
 
-	@OneToMany(mappedBy="proprio")
-	public List<Residence> getResidences() {
-		return residences;
-	}
-
-	public void setResidences(List<Residence> residences) {
-		this.residences = residences;
-	}
-
-	@OneToMany
-	public List<Person> getAmi() {
-		return ami;
-	}
-
-	public void setAmi(List<Person> ami) {
-		this.ami = ami;
-	}
-
-	@OneToMany(mappedBy="proprio")
-	public List<ElectronicDevices> getDevices() {
-		return devices;
-	}
-
-	public void setDevices(List<ElectronicDevices> devices) {
-		this.devices = devices;
-	}
-
-	@Override
-	public String toString() {
-		return "Person [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", mail=" + mail + ", residences="
-				+ residences + ", ami=" + ami + ", devices=" + devices + "]";
-	}
+//	@OneToMany(mappedBy="proprio")
+//	public List<Residence> getResidences() {
+//		return residences;
+//	}
+//
+//	public void setResidences(List<Residence> residences) {
+//		this.residences = residences;
+//	}
+//
+//	@OneToMany
+//	public List<Person> getAmi() {
+//		return ami;
+//	}
+//
+//	public void setAmi(List<Person> ami) {
+//		this.ami = ami;
+//	}
+//
+//	@OneToMany(mappedBy="proprio")
+//	public List<ElectronicDevices> getDevices() {
+//		return devices;
+//	}
+//
+//	public void setDevices(List<ElectronicDevices> devices) {
+//		this.devices = devices;
+//	}
+//
+//	@Override
+//	public String toString() {
+//		return "Person [id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", mail=" + mail + ", residences="
+//				+ residences + ", ami=" + ami + ", devices=" + devices + "]";
+//	}
 	
 	
 	
